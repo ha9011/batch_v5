@@ -6,8 +6,6 @@ spring:
     job:
       enabled: false
 
-#spring.application.name=batchv5
-#spring.batch.job.enabled=false
 
   datasource-meta:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,3 +18,6 @@ spring:
     jdbc-url: jdbc:mysql://localhost:3309/realdb?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
     username: root
     password: 1234
+
+
+
