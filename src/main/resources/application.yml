@@ -5,7 +5,9 @@ spring:
   batch:
     job:
       enabled: false
-
+    jdbc:
+      initialize-schema: always  # 항상 초기화 하겠다.
+      schema: classpath:org/springframework/batch/core/schema-mysql.sql # 원래는 자동으로 되지만, 명시적으로 입력해서 실수없게 초기화 하는 소스를 지정해주기
 
   datasource-meta:
     driver-class-name: com.mysql.cj.jdbc.Driver
